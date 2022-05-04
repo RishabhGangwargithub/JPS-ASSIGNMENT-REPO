@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-image: url(https://images.unsplash.com/photo-1647871609804-4594870f5952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=425&q=80)
+            
+        }
+        body{
+            background-color: rgba(224, 36, 36, 0.836);
+            font-weight: 700;
+            color: aliceblue;
+            font-size: 22px;
+            overflow: hidden;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(5,400px 1fr 1fr 1fr 1fr );
+            margin-top: 20px;
+            grid-gap: 20px;
+            
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: black;
+
+        }
+        li:nth-child(1){
+            margin-right: 200px;
+        }
+    
+        li:nth-child(2){
+            margin-left: 340px;
+        }
+        nav-link{
+            text-align: center;
+            padding: 10px 30px;
+            padding-top: 5px;
+            border-radius: 50px;
+        }
+        a:hover{
+            background-color: bisque;
+            color: rgb(184, 61, 61);
+        }
+     
+            
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <li class="nav-link"><a href="">CAPGEMINI</a></li>
+        <li class="nav-link"><a href="">HOME</a></li>
+        <li class="nav-link"><a href="">ABOUT</a></li>
+        <li class="nav-link"><a href="">CONTACT </a></li>
+        <li class="nav-link"><a href="">EMAIL </a></li>
+        
+
+    </div>
+    <br>
+    <br>
+    <div class="hero">
+        <h2>WELCOME</h2>
+        <h3>LANDSCAPE ASSIGNMENT</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas fugit dolorum. Libero praesentium ratione, quae vero molestiae totam nisi soluta perferendis. At est explicabo, ipsum nam facere consequuntur facilis eligendi odit consectetur totam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas fugit dolorum. Libero praesentium ratione, quae vero molestiae totam nisi soluta perferendis. At est explicabo, ipsum nam facere consequuntur facilis eligendi odit consectetur totam?
+        </p>
+        <button class="btn1" style="color: aliceblue; border: 2px solid white; background-color: aquamarine;">EXPLORE</button>
+        <button class="btn2" style="color: aliceblue;border: 2px solid white;">CONTACT</button>
+    
+    <br>
+    <br>
+    <div class="social-media">
+        <a href="#" class="fa fa-facebook">facebook</a>  
+        <a href="#" class="fa fa-twitter">twitter</a>  
+          
+        <a href="#" class="fa fa-linkedin">linkedin</a>  
+        <a href="#" class="fa fa-instagram">instagram</a> 
+    </div>
+</div>
+    
+</body>
+</html>
