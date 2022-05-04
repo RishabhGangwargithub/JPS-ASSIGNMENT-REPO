@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>USER FEEDBACK FORM</h1>
+    <br>
+    <form #login="ngForm" (ngSubmit)="submit(login)">
+        <div class="form-group">
+            <label for="firstname">Firstname</label><br>
+            <input #name='ngModel' required minlength="5" maxlength="10" type="text" name="firstname" class="form-conrol"ngModel>
+         <div *ngIf="name.touched && name.invalid" class="alert alert-danger">invalid - [plss provide name between 5-10 letters]</div>
+         </div>
+        
+         
+        <pre></pre>
+        <div class="form-group">
+            <label for="lastname">lastname</label><br>
+            <input  #lastname='ngModel' required minlength="5" maxlength="10" type="text" name="lastname" class="form-conrol"ngModel>
+            <div *ngIf="lastname.touched && lastname.invalid" class="alert alert-danger">invalid - [plss provide name between 5-10 letters]</div> 
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="email">email</label><br>
+            <input #email='ngModel' type="email" id="email"
+            pattern=".+@gmail.com" size="30" required type="text" name="email" class="form-conrol"ngModel>
+            <div *ngIf="email.touched && email.invalid" class="alert alert-danger">invalid - [plss provide email in valid format - @gmail.com]</div>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="mobile no">mobile no</label><br>
+            <input #mobileno='ngModel'input type="tel" id="phone" name="phone"
+            pattern="[0-9]{10}"
+            required type="text"
+             name="mobileno" class="form-conrol"ngModel>
+            <div *ngIf="mobileno.touched && mobileno.invalid" class="alert alert-danger">invalid - [mobile no should be of 10 digit]</div>
+        </div>
+        <pre></pre>
+        
+
+        <div class="form-group">
+            <label for="password">password</label><br>
+            <input type="password" name="password" class="form-conrol"ngModel>
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="submit">submit</button>
+        
+    </form>
+
+    
+</div>
